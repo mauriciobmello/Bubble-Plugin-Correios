@@ -1,0 +1,204 @@
+{
+    "calls": {
+        "AAC": {
+            "data_type": "XML",
+            "initialized": true,
+            "method": "get",
+            "name": "Zapiar Correios - Preço e Prazo",
+            "params": {
+                "AAG": {
+                    "doc": "CEP de Origem sem hífen.\nExemplo: 05311900 ",
+                    "key": "sCepOrigem",
+                    "private": true,
+                    "value": "88117000"
+                },
+                "AAH": {
+                    "doc": "CEP de Destino sem hífen.\nExemplo: 05311900 ",
+                    "key": "sCepDestino",
+                    "private": true,
+                    "value": "01310200"
+                },
+                "AAI": {
+                    "doc": "Peso da encomenda, incluindo sua embalagem. O peso deve ser informado em quilogramas. Se o formato for Envelope, o valor máximo permitido será 1kg.\n\nFormato: decimal com ponto\nEx: 0.50",
+                    "key": "nVlPeso",
+                    "private": true,
+                    "value": "0.50"
+                },
+                "AAJ": {
+                    "doc": "Formato da encomenda (incluindo embalagem).\n\nValores possíveis: 1, 2 ou 3\n\n1 – Formato caixa/pacote\n2 – Formato rolo/prisma\n3 – Envelope",
+                    "key": "nCdFormato",
+                    "private": true,
+                    "value": "3"
+                },
+                "AAK": {
+                    "doc": "Comprimento da encomenda (incluindo embalagem), em centímetros.\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlComprimento",
+                    "private": true,
+                    "value": "20"
+                },
+                "AAL": {
+                    "doc": "Altura da encomenda (incluindo embalagem), em centímetros. Se o formato for envelope, informar zero (0)\n\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlAltura",
+                    "private": true,
+                    "value": "0"
+                },
+                "AAM": {
+                    "doc": "Largura da encomenda (incluindo embalagem), em centímetros.\n\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlLargura",
+                    "private": true,
+                    "value": "10"
+                },
+                "AAN": {
+                    "doc": "Indica se a encomenda será entregue com o serviço\nadicional mão própria.\nValores possíveis: S ou N (S – Sim, N – Não)",
+                    "key": "sCdMaoPropria",
+                    "private": true,
+                    "value": "n"
+                },
+                "AAO": {
+                    "doc": "Indica se a encomenda será entregue com o serviço adicional valor declarado. Neste campo deve ser apresentado o valor declarado desejado, em Reais.\n\nFormato: decimal com ponto\nEx: 15.50 ou 0",
+                    "key": "nVlValorDeclarado",
+                    "private": true,
+                    "value": "150"
+                },
+                "AAP": {
+                    "doc": "Indica se a encomenda será entregue com o serviço adicional aviso de recebimento.\nValores possíveis: S ou N (S – Sim, N – Não)",
+                    "key": "sCdAvisoRecebimento",
+                    "private": true,
+                    "value": "n"
+                },
+                "AAQ": {
+                    "doc": "Código do serviço. Utilize um dos valores abaixo:\n\n04014 - SEDEX à vista\n04510 - PAC à vista\n04782 - SEDEX 12 ( à vista)\n04790 - SEDEX 10 (à vista)\n04804 - SEDEX Hoje à vista",
+                    "key": "nCdServico",
+                    "private": true,
+                    "value": "04014"
+                },
+                "AAR": {
+                    "doc": "Diâmetro da encomenda (incluindo embalagem), em centímetros.\n\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlDiametro",
+                    "private": true,
+                    "value": "0"
+                },
+                "AAS": {
+                    "key": "StrRetorno",
+                    "private": true,
+                    "value": "xml",
+                    "visibility": "hidden"
+                },
+                "AAT": {
+                    "key": "nIndicaCalculo",
+                    "private": true,
+                    "value": "3",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1662396002277x284929829743886340.plugin_api.AAC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Zapiar Correios - Preço e Prazo\",\"fields\":{\"_p_Servicos.cServico.Codigo\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico Codigo\",\"sample_value\":\"04014\",\"path\":[\"Servicos\",\"cServico\",\"Codigo\"]},\"_p_Servicos.cServico.Valor\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico Valor\",\"sample_value\":\"40,73\",\"path\":[\"Servicos\",\"cServico\",\"Valor\"]},\"_p_Servicos.cServico.PrazoEntrega\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico PrazoEntrega\",\"sample_value\":\"1\",\"path\":[\"Servicos\",\"cServico\",\"PrazoEntrega\"]},\"_p_Servicos.cServico.ValorSemAdicionais\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorSemAdicionais\",\"sample_value\":\"38,20\",\"path\":[\"Servicos\",\"cServico\",\"ValorSemAdicionais\"]},\"_p_Servicos.cServico.ValorMaoPropria\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorMaoPropria\",\"sample_value\":\"0,00\",\"path\":[\"Servicos\",\"cServico\",\"ValorMaoPropria\"]},\"_p_Servicos.cServico.ValorAvisoRecebimento\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorAvisoRecebimento\",\"sample_value\":\"0,00\",\"path\":[\"Servicos\",\"cServico\",\"ValorAvisoRecebimento\"]},\"_p_Servicos.cServico.ValorValorDeclarado\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorValorDeclarado\",\"sample_value\":\"2,53\",\"path\":[\"Servicos\",\"cServico\",\"ValorValorDeclarado\"]},\"_p_Servicos.cServico.EntregaDomiciliar\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico EntregaDomiciliar\",\"sample_value\":\"S\",\"path\":[\"Servicos\",\"cServico\",\"EntregaDomiciliar\"]},\"_p_Servicos.cServico.EntregaSabado\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico EntregaSabado\",\"sample_value\":\"S\",\"path\":[\"Servicos\",\"cServico\",\"EntregaSabado\"]},\"_p_Servicos.cServico.obsFim\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico obsFim\",\"sample_value\":\"\",\"path\":[\"Servicos\",\"cServico\",\"obsFim\"]},\"_p_Servicos.cServico.Erro\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico Erro\",\"sample_value\":\"0\",\"path\":[\"Servicos\",\"cServico\",\"Erro\"]},\"_p_Servicos.cServico.MsgErro\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico MsgErro\",\"sample_value\":\"\",\"path\":[\"Servicos\",\"cServico\",\"MsgErro\"]}}}}",
+            "url": "http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx"
+        },
+        "AAV": {
+            "0": "A",
+            "1": "A",
+            "2": "U",
+            "data_type": "XML",
+            "initialized": true,
+            "method": "get",
+            "name": "Zapiar Correios - Preço e Prazo",
+            "params": {
+                "AAG": {
+                    "doc": "CEP de Origem sem hífen.\nExemplo: 05311900 ",
+                    "key": "sCepOrigem",
+                    "private": true,
+                    "value": "88117000"
+                },
+                "AAH": {
+                    "doc": "CEP de Destino sem hífen.\nExemplo: 05311900 ",
+                    "key": "sCepDestino",
+                    "private": true,
+                    "value": "01310200"
+                },
+                "AAI": {
+                    "doc": "Peso da encomenda, incluindo sua embalagem. O peso deve ser informado em quilogramas. Se o formato for Envelope, o valor máximo permitido será 1kg.\n\nFormato: decimal com ponto\nEx: 0.50",
+                    "key": "nVlPeso",
+                    "private": true,
+                    "value": "0.50"
+                },
+                "AAJ": {
+                    "doc": "Formato da encomenda (incluindo embalagem).\n\nValores possíveis: 1, 2 ou 3\n\n1 – Formato caixa/pacote\n2 – Formato rolo/prisma\n3 – Envelope",
+                    "key": "nCdFormato",
+                    "private": true,
+                    "value": "3"
+                },
+                "AAK": {
+                    "doc": "Comprimento da encomenda (incluindo embalagem), em centímetros.\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlComprimento",
+                    "private": true,
+                    "value": "20"
+                },
+                "AAL": {
+                    "doc": "Altura da encomenda (incluindo embalagem), em centímetros. Se o formato for envelope, informar zero (0)\n\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlAltura",
+                    "private": true,
+                    "value": "0"
+                },
+                "AAM": {
+                    "doc": "Largura da encomenda (incluindo embalagem), em centímetros.\n\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlLargura",
+                    "private": true,
+                    "value": "10"
+                },
+                "AAN": {
+                    "doc": "Indica se a encomenda será entregue com o serviço\nadicional mão própria.\nValores possíveis: S ou N (S – Sim, N – Não)",
+                    "key": "sCdMaoPropria",
+                    "private": true,
+                    "value": "n"
+                },
+                "AAO": {
+                    "doc": "Indica se a encomenda será entregue com o serviço adicional valor declarado. Neste campo deve ser apresentado o valor declarado desejado, em Reais.\n\nFormato: decimal com ponto\nEx: 15.50 ou 0",
+                    "key": "nVlValorDeclarado",
+                    "private": true,
+                    "value": "150"
+                },
+                "AAP": {
+                    "doc": "Indica se a encomenda será entregue com o serviço adicional aviso de recebimento.\nValores possíveis: S ou N (S – Sim, N – Não)",
+                    "key": "sCdAvisoRecebimento",
+                    "private": true,
+                    "value": "n"
+                },
+                "AAQ": {
+                    "doc": "Código do serviço. Utilize um dos valores abaixo:\n\n04014 - SEDEX à vista\n04510 - PAC à vista\n04782 - SEDEX 12 ( à vista)\n04790 - SEDEX 10 (à vista)\n04804 - SEDEX Hoje à vista",
+                    "key": "nCdServico",
+                    "private": true,
+                    "value": "04014"
+                },
+                "AAR": {
+                    "doc": "Diâmetro da encomenda (incluindo embalagem), em centímetros.\n\nFormato: decimal com ponto\nEx: 15.50",
+                    "key": "nVlDiametro",
+                    "private": true,
+                    "value": "0"
+                },
+                "AAS": {
+                    "key": "StrRetorno",
+                    "private": true,
+                    "value": "xml",
+                    "visibility": "hidden"
+                },
+                "AAT": {
+                    "key": "nIndicaCalculo",
+                    "private": true,
+                    "value": "3",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1662396002277x284929829743886340.plugin_api.AAV",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAV\":{\"caption\":\"Zapiar Correios - Preço e Prazo\",\"fields\":{\"_p_Servicos.cServico.Codigo\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico Codigo\",\"sample_value\":\"04014\",\"path\":[\"Servicos\",\"cServico\",\"Codigo\"]},\"_p_Servicos.cServico.Valor\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico Valor\",\"sample_value\":\"40,73\",\"path\":[\"Servicos\",\"cServico\",\"Valor\"]},\"_p_Servicos.cServico.PrazoEntrega\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico PrazoEntrega\",\"sample_value\":\"1\",\"path\":[\"Servicos\",\"cServico\",\"PrazoEntrega\"]},\"_p_Servicos.cServico.ValorSemAdicionais\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorSemAdicionais\",\"sample_value\":\"38,20\",\"path\":[\"Servicos\",\"cServico\",\"ValorSemAdicionais\"]},\"_p_Servicos.cServico.ValorMaoPropria\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorMaoPropria\",\"sample_value\":\"0,00\",\"path\":[\"Servicos\",\"cServico\",\"ValorMaoPropria\"]},\"_p_Servicos.cServico.ValorAvisoRecebimento\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorAvisoRecebimento\",\"sample_value\":\"0,00\",\"path\":[\"Servicos\",\"cServico\",\"ValorAvisoRecebimento\"]},\"_p_Servicos.cServico.ValorValorDeclarado\":{\"ret_value\":\"number\",\"caption\":\"Servicos cServico ValorValorDeclarado\",\"sample_value\":\"2,53\",\"path\":[\"Servicos\",\"cServico\",\"ValorValorDeclarado\"]},\"_p_Servicos.cServico.EntregaDomiciliar\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico EntregaDomiciliar\",\"sample_value\":\"S\",\"path\":[\"Servicos\",\"cServico\",\"EntregaDomiciliar\"]},\"_p_Servicos.cServico.EntregaSabado\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico EntregaSabado\",\"sample_value\":\"S\",\"path\":[\"Servicos\",\"cServico\",\"EntregaSabado\"]},\"_p_Servicos.cServico.obsFim\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico obsFim\",\"sample_value\":\"\",\"path\":[\"Servicos\",\"cServico\",\"obsFim\"]},\"_p_Servicos.cServico.Erro\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico Erro\",\"sample_value\":\"0\",\"path\":[\"Servicos\",\"cServico\",\"Erro\"]},\"_p_Servicos.cServico.MsgErro\":{\"ret_value\":\"text\",\"caption\":\"Servicos cServico MsgErro\",\"sample_value\":\"\",\"path\":[\"Servicos\",\"cServico\",\"MsgErro\"]}}}}",
+            "url": "http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx"
+        }
+    },
+    "human": "Correios"
+}

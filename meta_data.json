@@ -1,0 +1,13 @@
+{
+    "categories": {
+        "0": "ecommerce",
+        "1": "technical",
+        "2": "small business",
+        "3": "location"
+    },
+    "description": "Calcule o valor e prazo de entrega de encomendas via Correios. Siga a documentação em cada parâmetro abaixo:\n\nCodigo: Código do serviço de entrega\nValor: Valor total do pedido\nPrazo: Prazo estimado em dias\nValorSemAdicionais: Preço sem adicionais\nValorMaoPropria: Preço com adição de Mão Própria\nValorAvisoRecebimento: Preço do Aviso de Recebimento\nValorValorDeclarado: Preço do serviço adicional Valor Declarado\nEntregaDomiciliar: Informa se a localidade informada possui entrega domiciliária. Se o prazo não for retornado corretamente, o retorno deste parâmetro será vazio.\nEntregaSabado: Informa se a localidade informada possui entrega domiciliária aos sábados. Se o prazo não for retornado corretamente, o retorno deste parâmetro será vazio.\nErro: <Códigos de Erros retornados pelo calculador> + o código 7 (Serviço indisponível, tente mais tarde)\nMsgErro: Retorna a descrição do erro gerado.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1662397534518x517825725035328200/correios-.png",
+    "license": "open_source",
+    "link": "https://www.correios.com.br/enviar-e-receber/ferramentas/calculador-remoto-de-precos-e-prazos/pdf/manual-de-implementacao-do-calculo-remoto-de-precos-e-prazos",
+    "name": "Correios"
+}
